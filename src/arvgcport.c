@@ -80,6 +80,8 @@ _pre_remove_child (ArvDomNode *self, ArvDomNode *child)
 static gboolean
 _use_legacy_endianess_mechanism (ArvGcPort *port, guint64 length)
 {
+	return true;
+
 	ArvDomDocument *document;
 	ArvGcRegisterDescriptionNode *register_description;
 
